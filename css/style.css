@@ -157,7 +157,12 @@ header {
  */
 
 footer {
-  padding: 20px 0;
   margin-top: 20px;
+}
+
+footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #eee;
 }
+
