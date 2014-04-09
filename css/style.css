@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.pull-right {
-    float: right !important;
-}
-
-.pull-left {
-    float: left !important;
-}
-
 /**
  * Grid System
  */
@@ -25,41 +12,6 @@ html, body {
     padding: 0 1em;
     margin: 0 auto;
     max-width: 48em;
-}
-
-.row {
-    margin: 0 -1em;
-}
-
-.row:before,
-.row:after {
-    display: table;
-    content: " ";
-}
-
-.row:after {
-    clear: both;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 1em;
-    padding-left: 1em;
-}
-
-@media (min-width: 36em) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-        float: left;
-    }
-    
-    .push { float: right; } 
-  
-    .col-12 { width: 100%; }
-    .col-8 { width: 66.66666666666666%; }
-    .col-6 { width: 50%; }
-    .col-4 { width: 33.33333333333333%; }
-    .col-3 { width: 25%; } 
 }
 
 /* Additional CLearfix */
@@ -100,7 +52,7 @@ body {
     text-align: right;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-weight: 300;
     font-style: normal;
     line-height: 1.1;
@@ -166,31 +118,6 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-ul,
-ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-    margin-bottom: 0;
-}
-
-.inline {
-    padding-left: 0;
-    margin-left: -5px;
-    list-style: none;
-}
-
-.inline > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
 /**
  * Tables
  */
@@ -223,4 +150,14 @@ tbody td {
 header {
   text-align: center;
   margin: 25px 0;
+}
+
+/**
+ * Footer
+ */
+
+footer {
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
 }
